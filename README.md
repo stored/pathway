@@ -2,7 +2,17 @@
 
 See article at [http://hire.jonasgalvez.com.br/2018/May/20/You-Dont-Need-REST](http://hire.jonasgalvez.com.br/2018/May/20/You-Dont-Need-REST).
 
-## Services
+## Build and run
+
+    go build
+    ./pathway
+
+## Testing method calls
+
+    curl -H "Content-Type: application/json" \
+      -d '{"test": 1}' http://0.0.0.0:4000/api/echo/message
+
+## Adding services
 
 An example EchoService is provided (echo_service.go). A real service may talk to other APIs or 
 database services directly. Here's an auth proxy would look like:
