@@ -14,8 +14,9 @@ See article at [http://hire.jonasgalvez.com.br/2018/May/20/You-Dont-Need-REST](h
 
 ## Adding services
 
-An example EchoService is provided (echo_service.go). A real service may talk to other APIs or 
-database services directly. Here's an auth proxy would look like:
+An example EchoService is provided (echo_service.go). 
+A real service may talk to other APIs or database services directly. 
+Here's an auth proxy would look like:
 
     type LoginCredentials struct {
       email    *string `json:"email"`
